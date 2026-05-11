@@ -13,7 +13,7 @@
     
 </head>
 <body>
-    <section id="containerFather">
+    <section id="container_Father">
         <div id="header">
             <div id="logo_container">
                 <img id="logo" src="assets/logoEdit.jpeg" alt="Logomarca da Puropão"></img>
@@ -21,11 +21,16 @@
             <h1>Busca de Ramais</h1>
             <p id="subtitulo">Encontre Rapidamente o Ramal Desejado</p>
         </div>
-       <div ir="search"> 
-            <form></form> <!--barra de pesquisa-->
-        </div>
+        <div id="container_search">
+            <div id="search"> 
+                <form role="search" action="/search" method="get">
+                    <label for="q">Buscar por Setor, Responsável ou Ramal...</label>
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
         <div id="contadorRamaisRetorno">
             <p>15 Ramais Encontrados</p>
+        </div>
         </div>
         <div id="mainList">
             <ul id="listaRamais">
