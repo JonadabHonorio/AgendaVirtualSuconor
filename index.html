@@ -24,13 +24,18 @@
         <div id="container_search">
             <div id="search"> 
                 <form role="search" action="/search" method="get">
-                    <label for="q">Buscar por Setor, Responsável ou Ramal...</label>
+                    <label for="search">Buscar por Setor, Responsável ou Ramal...</label>
+                    <input      
+                        type="search"
+                        id="search"
+                        class="search-input"
+                    >
                     <button type="submit">Buscar</button>
                 </form>
             </div>
-        <div id="contadorRamaisRetorno">
-            <p>15 Ramais Encontrados</p>
-        </div>
+            <div id="contadorRamaisRetorno">
+                <p>15 Ramais Encontrados</p>
+            </div>
         </div>
         <div id="mainList">
             <ul id="listaRamais">
