@@ -29,6 +29,10 @@ body{
 
 #container_Father {
     padding: 0px 10px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #header { /* Será a classe padrão para centralizar as div por meio do flexBox*/
@@ -53,4 +57,22 @@ h1 {
 
 #subtitulo {
     color: #4a5565
+}
+
+#container_ramalList {
+    background-color: #ffffff;
+    width: 850px;
+    height: 700px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px #0000006c;
+}
+
+.ramalList {
+    background-color: grey;
+    width: 100%;
+    height: 100px;
+}
+
+.ramalSactor {
+    font-size: 35px;
 }
