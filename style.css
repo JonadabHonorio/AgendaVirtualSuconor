@@ -31,8 +31,8 @@ body{
     padding: 0px 10px 10px 0px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+  
 }
 
 #header { /* Será a classe padrão para centralizar as div por meio do flexBox*/
@@ -65,6 +65,8 @@ h1 {
     height: 700px;
     border-radius: 15px;
     box-shadow: 1px 1px 5px #0000006c;
+    flex-direction: row;
+    justify-content: space-between;  
 }
 
 .ramalList {
@@ -75,4 +77,10 @@ h1 {
 
 .ramalSactor {
     font-size: 35px;
+}
+
+.saction_ramalNumber {
+    width: 20px;
+    height: 20px;
+    background-color: blue; 
 }
