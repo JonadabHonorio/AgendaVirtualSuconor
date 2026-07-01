@@ -25,10 +25,15 @@ body{
     height: 100%;
     width: 100%;
     overflow-x: hidden; 
-}
+    
+}   
 
 #container_Father {
     padding: 0px 10px 10px 0px; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
 
 }
 
@@ -84,4 +89,9 @@ h1 {
     width: 20px;
     height: 20px;
     background-color: blue; 
+}
+
+.line {
+    width: 100%;
+    border: 1px solid #E9F0FF;
 }
