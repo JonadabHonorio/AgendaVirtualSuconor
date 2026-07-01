@@ -87,10 +87,17 @@ h1 {
     font-size: 35px;
 }
 
-.saction_ramalNumber {
-    width: 20px;
-    height: 20px;
-    background-color: blue; 
+.container_ramalNumber {
+    position: relative;
+    right:  -650px;
+    bottom: 24px;
+    width: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 25px;
+    background-color: #155DFC; 
 }
 
 .line {
