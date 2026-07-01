@@ -83,7 +83,7 @@ h1 {
     
 }
 
-.ramalSactor {
+.sactorName {
     font-size: 35px;
 }
 
@@ -91,13 +91,26 @@ h1 {
     position: relative;
     right:  -650px;
     bottom: 24px;
-    width: 100px;
+    width: 150px;
+    height: 80px;
     border-radius: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding: 25px;
+    justify-content: space-evenly;
     background-color: #155DFC; 
+}
+
+.iconPhone { 
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    
+}
+
+.ramalNumber{
+    font-size: 40px;
+    color: #FFFFFF;
 }
 
 .line {
