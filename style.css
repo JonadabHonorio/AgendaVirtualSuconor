@@ -75,7 +75,7 @@ h1 {
 .ramalList {
     background-color: #ffffff;
     width: 100%;
-    height: 100px;
+    height: 111px;
     /* margin-bottom: 8px; */
     border-radius: 15px 15px 0px 0px;
     display: flex;
@@ -84,22 +84,22 @@ h1 {
 }
 
 .sectorName {
-   margin: 25px 10px 10px 10px;
+   margin: 25px 10px 10px 28px;
    font-size: 20px;
 
 }
 
 .ramalUser {
-   margin: 10px 10px 10px 15px;
+   margin: 10px 10px 10px 34px;
    font-size: 17px;
    color: #9D969A;
 }
 
 .container_ramalNumber {
     position: relative;
-    right:  -650px;
-    bottom: 80px;
-    width: 150px;
+    right:  -645px;
+    bottom: 75px;
+    width: 130px;
     height: 80px;
     border-radius: 10px;
     padding: 10px;
@@ -117,7 +117,7 @@ h1 {
 }
 
 .ramalNumber{
-    font-size: 40px;
+    font-size: 35px;
     color: #FFFFFF;
 }
 
