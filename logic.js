@@ -1,7 +1,12 @@
 const searchInput = document.getElementById("search");
-const ramalList = document.getElementById("ramalList");
 const emptyMessage = document.getElementById("emptyMessage");
+const ramalList = document.querySelector(".ramalList");
 
-const ramalList = [
-  { setor: "Tecnologia da Informação", nome: "Setorial", ramal: "202" }
-];
+
+function  mouseColorListRamalEnable() {
+  ramalList.style.backgroundColor = "#E9F0FF";
+};
+
+function  mouseColorListRamalDisable() {
+  ramalList.style.backgroundColor = "#ffffff";
+};
