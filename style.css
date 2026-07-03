@@ -80,23 +80,25 @@ h1 {
     margin-bottom: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    
+    justify-content: start;  
 }
 
 .sectorName {
-   margin-top: px;
-    
+   margin: 25px 10px 10px 10px;
+   font-size: 20px;
+
 }
 
 .ramalUser {
-   
+   margin: 10px;
+   font-size: 17px;
+   color: #9D969A;
 }
 
 .container_ramalNumber {
     position: relative;
     right:  -650px;
-    bottom: 24px;
+    bottom: 80px;
     width: 150px;
     height: 80px;
     border-radius: 10px;
