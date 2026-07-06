@@ -3,7 +3,9 @@ const emptyMessage = document.getElementById("emptyMessage");
 const ramalList = document.querySelector(".ramalList");
 
 
-function  mouseColorListRamalEnable() {
+
+
+function  mouseColorListRamalEnable() { /*Função responsável pela troca de cor da div ramalList */
   ramalList.style.backgroundColor = "#E9F0FF";
 };
 
