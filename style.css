@@ -33,33 +33,37 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    
-
 }
 
 #container_header { 
+    width: 500px;
+    height: 300px;
+    margin: 100px;
+    padding: 10px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 100px 100px 100px 100px;
-    padding: 10px ; 
 }
 
 #logo {
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
+    margin-bottom: 15px;
     border-radius: 15px;
     box-shadow: 1px 1px 5px #0000006c;
 }
 
 h1 {
     margin: 10px;
-    font-size: 30;
+    font-size: 40;
+    Letter-spacing: 2.0px;
 }
 
 #subtitulo {
-    color: #4a5565
+    color: #4a5565;
+    font-size: 20;
+    Letter-spacing: 2.0px;
 }
 
 #container_ramalList {
@@ -67,10 +71,7 @@ h1 {
     width: 850px;
     height: 2608px;
     border-radius: 15px;
-    box-shadow: 1px 1px 5px #0000006c;
-    display: flex;
-    flex-direction: column;
-    
+    box-shadow: 1px 1px 5px #0000006c;  
 }
 
 .ramalList {
