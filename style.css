@@ -66,6 +66,12 @@ h1 {
     Letter-spacing: 2.0px;
 }
 
+#container_search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #container_ramalList {
     background-color: #ffffff;
     width: 850px;
