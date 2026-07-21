@@ -23,18 +23,16 @@
             </div> 
         <div id="container_search">
             <div id="search"> 
-                <span id="searchIcon" class="material-symbols-outlined">  
-                    <!-- <img src="assets/searchIcon30px.png" >-->
-                </span>
-                <form role="search" action="/search" method="get">
-                    <label for="search"></label>
+                <form id="form" role="search" action="/search" method="get">
+                    <div id="container_searchIcon" > 
+                        <img id="searchIcon" src="assets/searchIcon30px.png" >
+                    </div>
                     <input id="inputSearch"     
                         type="search"
                         id="search"
                         class="search-input"
                         placeholder="Buscar por Setor, Responsável ou Ramal..."
                     >
-                    <button type="submit">Buscar</button>
                 </form>
             </div>
         </div> 
