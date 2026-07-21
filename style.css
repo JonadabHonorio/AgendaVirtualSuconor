@@ -81,6 +81,13 @@ h1 {
     background-color: #0000000c;
 }
 
+#searchIcon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background-image: url("assets/searchIcon30px.png");
+}
+
 #inputSearch {
     width: 100%;
     height: 80px;
