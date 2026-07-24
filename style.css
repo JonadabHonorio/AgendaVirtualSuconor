@@ -119,11 +119,20 @@ h1 {
     box-shadow: 1px 1px 5px #D6DDE8;  
 }
 
-.ramalList {
+.ramalListFirst {
     background-color: #ffffff;
     width: 100%;
     height: 111px;
     border-radius: 15px 15px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;  
+}
+
+.ramalListDefault {
+    background-color: #ffffff;
+    width: 100%;
+    height: 111px;
     display: flex;
     flex-direction: column;
     justify-content: start;  
@@ -137,7 +146,7 @@ h1 {
     background-color: #ffffff;
     width: 100%;
     height: 115px;
-    border-radius: 15px;
+    border-radius: 0px 0px 15px 15px;
     display: flex;
     flex-direction: column;
     justify-content: start;  
@@ -172,7 +181,7 @@ h1 {
 .iconPhone { 
     height: 30px;
     width: 30px;
-    margin-top: 10px;
+    margin-top: 8.5px;
     
 }
 
