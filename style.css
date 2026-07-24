@@ -114,7 +114,7 @@ h1 {
 #container_ramalList {
     background-color: #ffffff;
     width: 850px;
-    height: 2608px;
+    height: 100%;
     border-radius: 15px;
     box-shadow: 1px 1px 5px #D6DDE8;  
 }
@@ -193,4 +193,10 @@ h1 {
 .line {
     width: 99,5%;
     border: 1px solid #d2d7e0;
+}
+
+#footerMensage {
+    font-size: 17px;
+    margin: 35px;
+    color: #4a5565;
 }
