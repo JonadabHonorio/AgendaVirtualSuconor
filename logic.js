@@ -1,20 +1,19 @@
-const searchInput = document.getElementById("search");
-const emptyMessage = document.getElementById("emptyMessage");
-const ramalList = document.querySelector(".ramalList");
+
 const inputSearch = document.getElementById("inputSearch");
 const ramalListDefault = document.querySelectorAll(".ramalListDefault");
 const ramalListFirst = document.querySelector(".ramalListFirst");
 const ramalListLast = document.querySelector(".ramalListLast");
 
-const search = inputSearch.value; /* Contante que armazena o valor realizado na barra de pesquisa de ramais */
+const ramalAll = [ ...ramalListDefault , ramalListFirst , ramalListLast]; /*Esse array armazena todas as estruturas do HTML referente aos ramais*/
 
+console.log(ramalAll);
 
 inputSearch.addEventListener("input", () => { 
     const search = inputSearch.value.toLowerCase(); 
-         ramalListDefault.forEach(contato => { 
+         ramalAll.forEach(contato => { 
             const texto = contato.textContent.toLowerCase();
             if (texto.includes(search)) { 
-              contato.style.display = "block"; 
+              contato.style.display = ""; /* o campo está em branco para não influênciar no layaut dos elementos que contêm Flex-Box*/
             } else { 
               contato.style.display = "none"; 
             } 
@@ -24,14 +23,3 @@ inputSearch.addEventListener("input", () => {
     
 
 
-
-//console.log(ramalListDefault, inputSearch);
-
-/*function  mouseColorListRamalEnable() { Funcionalidade substituida pelo Hover no CSS
-  ramalList.style.backgroundColor = "#E9F0FF";
-};
-
-function  mouseColorListRamalDisable() {
-  ramalList.style.backgroundColor = "#ffffff";
-};
-*/
