@@ -67,7 +67,7 @@ h1 {
 }
 
 #container_search {
-    width: 1000px;
+    width: 1050px;
     height: 80px;
     align-items: center;
     justify-content: center;
@@ -113,7 +113,7 @@ h1 {
 
 #container_ramalList {
     background-color: #ffffff;
-    width: 850px;
+    width: 1000px;
     height: 100%;
     border-radius: 15px;
     box-shadow: 1px 1px 5px #D6DDE8;  
@@ -160,13 +160,13 @@ h1 {
 
 .ramalUser {
    margin: 10px 10px 10px 34px;
-   font-size: 17px;
-   color: #9D969A;
+   font-size: 18px;
+   color: #5c5757;
 }
 
 .container_ramalNumber {
     position: relative;
-    right:  -645px;
+    right:  -800px;
     bottom: 75px;
     width: 130px;
     height: 80px;
