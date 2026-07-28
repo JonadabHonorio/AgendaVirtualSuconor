@@ -18,7 +18,8 @@ inputSearch.addEventListener("input", () => {
          ramalAll.forEach(contact => { 
             const htmlForText = normalizeInput(contact.textContent);
             if (htmlForText.includes(search)) { 
-              contact.style.display = ""; /* O campo está em branco para não influênciar no layaut dos elementos que contêm Flex-Box*/
+              contact.style.display = "";  /* O campo está em branco para não influênciar no layaut dos elementos que contêm Flex-Box*/
+              contact.style.class.add
             } else { 
               contact.style.display = "none"; 
             } 
