@@ -18,14 +18,19 @@ inputSearch.addEventListener("input", () => {
          ramalAll.forEach(contact => { 
             const htmlForText = normalizeInput(contact.textContent);
             if (htmlForText.includes(search)) { 
-              contact.style.display = "";  /* O campo está em branco para não influênciar no layaut dos elementos que contêm Flex-Box*/
-              contact.style.class.add
+                contact.style.display = "";  /* O campo está em branco para não influênciar no layaut dos elementos que contêm Flex-Box*/
+                contact.classList.add("ramalListReturned");
+              
+            }else if(search == "") {
+              console.log("vazia");
+              //contact.classList.add("ramalListDefault");
+
             } else { 
-              contact.style.display = "none"; 
+                contact.style.display = "none"; 
             } 
         } 
      );  
   });
-    
+
 
 
