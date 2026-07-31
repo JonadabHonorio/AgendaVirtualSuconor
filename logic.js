@@ -20,17 +20,11 @@ inputSearch.addEventListener("input", () => {
             if (htmlForText.includes(search)) { 
                 contact.style.display = "";  /* O campo está em branco para não influênciar no layaut dos elementos que contêm Flex-Box*/
                 contact.classList.add("ramalListReturned");
-              
-            }else if(search == "") {
-              console.log("vazia");
-              //contact.classList.add("ramalListDefault");
-
-            } else { 
+            }else { 
                 contact.style.display = "none"; 
             } 
         } 
      );  
   });
-
 
 
