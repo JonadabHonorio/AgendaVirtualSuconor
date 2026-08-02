@@ -4,8 +4,8 @@ const ramalListDefault = document.querySelectorAll(".ramalListDefault");
 const ramalListFirst = document.querySelector(".ramalListFirst");
 const ramalListLast = document.querySelector(".ramalListLast");
 
-const ramalAll = [ ...ramalListDefault , ramalListFirst , ramalListLast]; /*Esse array armazena todas as estruturas do HTML referente aos ramais*/
 
+const ramalAll = [ ...ramalListDefault , ramalListFirst , ramalListLast]; /*Esse array armazena todas as estruturas do HTML referente aos ramais*/
 
 
 function normalizeInput(input) { /* Função responsável por retirar os caracteres especiais inputados na barra de pesquisa */
@@ -26,5 +26,17 @@ inputSearch.addEventListener("input", () => {
         } 
      );  
   });
+
+inputSearch.addEventListener("input", () => { /*Função responsável por remover o layaut especial das agendas pesquisadas para a padrão após pesquisa */
+    const search = normalizeInput(inputSearch.value);
+
+    if (search === "") {
+        ramalAll.forEach(contact => {
+            contact.style.display = "";
+            contact.classList.remove("ramalListReturned");
+        });
+        return;
+    }
+})
 
 
