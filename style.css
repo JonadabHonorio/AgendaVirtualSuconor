@@ -117,6 +117,41 @@ h1 {
     Letter-spacing: 1.0px;
 }
 
+#container_ramalNotFaund {
+    display: none;
+}
+
+#ramalNotFaund {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 1000px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px #D6DDE8;  
+}
+
+#container_iconRamalNotFaund {
+   margin: 30px; 
+}
+
+#firstMensageNotFaund {
+    color: #272c35;
+    font-size: 25;
+    Letter-spacing: 2.0px;
+    margin: 10px;
+}
+
+#segundMensageNotFaund {
+    color: #888783;
+    font-size: 20;
+    Letter-spacing: 2.0px;
+    
+}
+
 #container_ramalList {
     background-color: #ffffff;
     width: 1000px;
