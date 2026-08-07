@@ -4,6 +4,7 @@ const ramalListDefault = document.querySelectorAll(".ramalListDefault");
 const ramalListFirst = document.querySelector(".ramalListFirst");
 const ramalListLast = document.querySelector(".ramalListLast");
 const searchCounterReturn = document.getElementById("searchCounterReturn");
+const container_ramalNotFaund = document.getElementById("container_ramalNotFaund");
 
 
 const ramalAll = [ ...ramalListDefault , ramalListFirst , ramalListLast]; /*Esse array armazena todas as estruturas do HTML referente aos ramais*/
@@ -12,7 +13,6 @@ const ramalAll = [ ...ramalListDefault , ramalListFirst , ramalListLast]; /*Esse
 function normalizeInput(input) { /* Função responsável por retirar os caracteres especiais inputados na barra de pesquisa */
     return input.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
 };
-
 
 inputSearch.addEventListener("input", () => { /*Função responsável por tratar o input da barra de pesquisa e comparar com a lista de ramais existente, em seguida retorna quando encontrado */
     const search = normalizeInput(inputSearch.value); 
@@ -31,11 +31,15 @@ inputSearch.addEventListener("input", () => { /*Função responsável por tratar
      searchCounterReturn.innerHTML = `${searchCounterIncrement} Ramais Encontrados`; /*Parte responsável por retornar a quantidade de ramais*/
             if(searchCounterIncrement == 1 ) {
                      searchCounterReturn.innerHTML =`${searchCounterIncrement} Ramal Encontrado`;
-     }
 
+            }else if(searchCounterIncrement == 0) {
+                    container_ramalNotFaund.style.display = "block";
+
+            }else {
+                container_ramalNotFaund.style.display = "none";
+            }
 
 });
-
 
 inputSearch.addEventListener("input", () => { /*Função responsável por remover o layaut especial das agendas pesquisadas para a padrão após pesquisa */
     const search = normalizeInput(inputSearch.value);
@@ -44,6 +48,7 @@ inputSearch.addEventListener("input", () => { /*Função responsável por remove
         ramalAll.forEach(contact => {
             contact.style.display = "";
             contact.classList.remove("ramalListReturned");
+            
         });
         return;
     }
