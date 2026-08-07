@@ -6,8 +6,6 @@ const ramalListLast = document.querySelector(".ramalListLast");
 const searchCounterReturn = document.getElementById("searchCounterReturn");
 
 
-
-
 const ramalAll = [ ...ramalListDefault , ramalListFirst , ramalListLast]; /*Esse array armazena todas as estruturas do HTML referente aos ramais*/
 
 
@@ -16,24 +14,28 @@ function normalizeInput(input) { /* Função responsável por retirar os caracte
 };
 
 
-var teste = contact;
-inputSearch.addEventListener("input", () => { 
+inputSearch.addEventListener("input", () => { /*Função responsável por tratar o input da barra de pesquisa e comparar com a lista de ramais existente, em seguida retorna quando encontrado */
     const search = normalizeInput(inputSearch.value); 
-    
+    let searchCounterIncrement = 0;  
          ramalAll.forEach(contact => { 
             const htmlForText = normalizeInput(contact.textContent);
             if (htmlForText.includes(search)) { 
                     contact.style.display = "";  /* O campo está em branco para não influênciar no layaut dos elementos que contêm Flex-Box*/
                     contact.classList.add("ramalListReturned");
-                    
+                    searchCounterIncrement++;                               
             }else { 
                     contact.style.display = "none"; 
             } 
         } 
-     );  
-  });
+     ); 
+     searchCounterReturn.innerHTML = `${searchCounterIncrement} Ramais Encontrados`; /*Parte responsável por retornar a quantidade de ramais*/
+            if(searchCounterIncrement == 1 ) {
+                     searchCounterReturn.innerHTML =`${searchCounterIncrement} Ramal Encontrado`;
+     }
 
-console.log(teste);
+
+});
+
 
 inputSearch.addEventListener("input", () => { /*Função responsável por remover o layaut especial das agendas pesquisadas para a padrão após pesquisa */
     const search = normalizeInput(inputSearch.value);
@@ -48,8 +50,5 @@ inputSearch.addEventListener("input", () => { /*Função responsável por remove
 })
 
 
-
-
- searchCounterReturn.textContent = "Testinho" 
 
 
