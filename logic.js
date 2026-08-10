@@ -1,4 +1,3 @@
-
 const inputSearch = document.getElementById("inputSearch");
 const ramalListDefault = document.querySelectorAll(".ramalListDefault");
 const ramalListFirst = document.querySelector(".ramalListFirst");
@@ -52,7 +51,7 @@ inputSearch.addEventListener("input", () => { /*Função responsável por remove
         });
         return;
     }
-})
+})  
 
 
 
