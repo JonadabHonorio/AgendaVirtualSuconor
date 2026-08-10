@@ -16,7 +16,7 @@
 
 @media (max-width: 870px) {
     #container_search {
-        width: 600px;
+        width: 700px;
     }
    #container_ramalList {
         width: 600px;
@@ -28,30 +28,21 @@
     .sectorName {
         font-size: 17px;
     }
-
 }
 
-@media (max-width: 870px) {
+@media (max-width: 730px) {
     #logo {
-        height: 110px;
-        width: 110px;
-    }
-    #h1 {
-        font-size: 40;
+        height: 95px;
+        width: 95px;
     }
 
-    #container_search {
-        width: 650px;
-    }
-   #container_ramalList {
-        width: 600px;
-    }
-    .container_ramalNumber {
-        right:  -400px; 
+    h1 {
+        font-size: 30px;
+
     }
 
-    .sectorName {
-        font-size: 17px;
+    #subtitulo {
+        font-size: 20px;
     }
 
 }
