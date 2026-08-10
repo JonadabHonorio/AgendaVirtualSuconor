@@ -1,0 +1,57 @@
+                                            /*Arquivo responsável pela Responsividade do Site*/
+
+                                        
+
+@media (max-width: 1050px) {    
+    #container_search {
+        width: 800px;
+    }
+    #container_ramalList {
+        width: 800px;
+    }
+    .container_ramalNumber {
+        right:  -600px;
+    }
+}
+
+@media (max-width: 870px) {
+    #container_search {
+        width: 600px;
+    }
+   #container_ramalList {
+        width: 600px;
+    }
+    .container_ramalNumber {
+        right:  -400px; 
+    }
+
+    .sectorName {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 870px) {
+    #logo {
+        height: 110px;
+        width: 110px;
+    }
+    #h1 {
+        font-size: 40;
+    }
+
+    #container_search {
+        width: 600px;
+    }
+   #container_ramalList {
+        width: 600px;
+    }
+    .container_ramalNumber {
+        right:  -400px; 
+    }
+
+    .sectorName {
+        font-size: 17px;
+    }
+
+}
