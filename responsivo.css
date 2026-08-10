@@ -4,7 +4,7 @@
 
 @media (max-width: 1050px) {    
     #container_search {
-        width: 800px;
+        width: 850px;
     }
     #container_ramalList {
         width: 800px;
@@ -41,7 +41,7 @@
     }
 
     #container_search {
-        width: 600px;
+        width: 650px;
     }
    #container_ramalList {
         width: 600px;
