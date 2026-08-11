@@ -45,4 +45,13 @@
         font-size: 20px;
     }
 
+    #container_search {
+        width: 650px;
+        height: 80px;
+    }
+
+    #inputSearch {
+        font-size: 18px;
+    }
+
 }
