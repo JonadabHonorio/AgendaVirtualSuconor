@@ -71,7 +71,6 @@
 
     #container_search {
         width: 550px;
-        height: 80px;
     }
 
     #inputSearch {
@@ -96,4 +95,34 @@
         width: 110px;
         height: 60px;  
     }
+}
+
+@media (max-width: 560px) {
+    #subtitulo {
+        Letter-spacing: 0px;
+    }
+
+    #container_search {
+        width: 520px;
+    }
+
+}
+
+@media (max-width: 535px) {
+    #subtitulo {
+        Letter-spacing: 0px;
+    }
+
+    #container_search {
+        width: 520px;
+    }
+
+    #inputSearch {
+        font-size: 17px ;
+    }
+
+    #container_ramalList {
+        width: 400px ;
+    }
+
 }
