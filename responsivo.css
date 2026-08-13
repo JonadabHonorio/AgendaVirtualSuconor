@@ -131,6 +131,7 @@
 
     .sectorName {
         font-size: 14px;
+        
     }
 
     .ramalUser {
@@ -144,4 +145,8 @@
         height: 50px;
     }
 
+}
+
+@media (max-width: 500px) {
+    
 }
