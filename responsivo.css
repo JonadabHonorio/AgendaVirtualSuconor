@@ -30,6 +30,10 @@
     .sectorName {
         font-size: 17px;
     }
+
+    .sectorName500px {
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 690px) {
@@ -49,6 +53,7 @@
     #container_search {
         width: 650px;
         height: 80px;
+        margin-top: 0px;
     }
 
     #inputSearch {
@@ -86,6 +91,10 @@
     }
 
     .sectorName {
+        font-size: 15.5px;
+    }
+
+    .sectorName500px {
         font-size: 15.5px;
     }
 
@@ -131,7 +140,10 @@
 
     .sectorName {
         font-size: 14px;
-        
+    }
+
+    .sectorName500px {
+        font-size: 14px;
     }
 
     .ramalUser {
@@ -148,5 +160,36 @@
 }
 
 @media (max-width: 500px) {
-    
+    #subtitulo {
+        Letter-spacing: 0px;
+        font-size: 18px;
+    }
+   
+    #container_search {
+        width: 400px;
+    }
+
+    #inputSearch {
+        font-size: 13px ;
+    }
+
+     #container_ramalList {
+        width: 350px ;
+    }
+
+    #sectorName {
+        font-size: 10px; 
+    }
+
+    .ramalUser {
+        font-size: 15px;
+    }
+
+    .container_ramalNumber {
+        right:  -220px;
+        bottom: 64px;
+        width: 90px;
+        height: 40px;
+    }
+
 }
