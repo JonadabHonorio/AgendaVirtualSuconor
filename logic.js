@@ -5,6 +5,8 @@ const ramalListLast = document.querySelector(".ramalListLast");
 const searchCounterReturn = document.getElementById("searchCounterReturn");
 const container_ramalNotFaund = document.getElementById("container_ramalNotFaund");
 const sectorNameResponsive = document.querySelectorAll(".sectorNameResponsive");
+const sectorName500px = document.querySelectorAll(".sectorName500px");
+const container_ramalNumber = document.querySelectorAll(".container_ramalNumber");
 const container_Father = document.getElementById("container_Father");
 const windowsBrowserDimension = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth; /*Captura a largura da janela do usuário*/
 
@@ -12,23 +14,12 @@ const windowsBrowserDimension = window.innerWidth || document.documentElement.cl
 const ramalAll = [ ...ramalListDefault , ramalListFirst , ramalListLast]; /*Esse array armazena todas as estruturas do HTML referente aos ramais*/
 
 
-
-document.addEventListener("DOMContentLoaded", () => { /* Função responsável pela responsividade de determinados ramais para Mobile */
-    if(windowsBrowserDimension <= 500) {
-        sectorNameResponsive[0].classList.add("sectorNameResponsiveMobile");
-        sectorNameResponsive[1].classList.add("sectorNameResponsiveMobile");
-        sectorNameResponsive[2].classList.add("sectorNameResponsiveMobile");
-    } 
-  }
-);
-
-
 function normalizeInput(input) { /* Função responsável por retirar os caracteres especiais inputados na barra de pesquisa */
     return input.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
 };
 
 
-inputSearch.addEventListener("input", () => { /*Função responsável por tratar o input da barra de pesquisa e comparar com a lista de ramais existente, em seguida retorna quando encontrado */
+inputSearch.addEventListener("input", () => {  /*Função responsável por tratar o input da barra de pesquisa e comparar com a lista de ramais existente, em seguida retorna quando encontrado */
     const search = normalizeInput(inputSearch.value); 
     let searchCounterIncrement = 0;  
          ramalAll.forEach(contact => { 
@@ -70,5 +61,16 @@ inputSearch.addEventListener("input", () => { /*Função responsável por remove
 });  
 
 
-
-
+document.addEventListener("DOMContentLoaded", () => { /* Função responsável pela responsividade de determinados ramais para Mobile */
+    if(windowsBrowserDimension <= 500) {
+        sectorNameResponsive[0].style.display = "none" ;
+        sectorName500px[0].style.display = "block" ;
+        container_ramalNumber[1].style.bottom = "67px";
+        sectorNameResponsive[1].style.display = "none" ;
+        sectorName500px[1].style.display = "block" ;
+        container_ramalNumber[10].style.bottom = "67px";
+        sectorNameResponsive[2].style.display = "none" ;
+        sectorName500px[2].style.display = "block" ;
+        container_ramalNumber[24].style.bottom = "67px";       
+  } 
+});
