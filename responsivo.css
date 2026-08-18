@@ -13,6 +13,9 @@
         right:  -600px;
         bottom: 74px;
     }
+    #ramalNotFaund {
+        width: 800px;
+    }
 }
 
 @media (max-width: 870px) {
@@ -33,6 +36,10 @@
 
     .sectorName500px {
         font-size: 17px;
+    }
+
+    #ramalNotFaund {
+        width: 650px;
     }
 }
 
@@ -60,7 +67,9 @@
         font-size: 18px;
     }
 
-    
+    #ramalNotFaund {
+        width: 500px;
+    }
 
 }
 
@@ -117,6 +126,9 @@
 
     #container_search {
         width: 520px;
+    }
+    #ramalNotFaund {
+        width: 450px;
     }
 
 }
@@ -192,4 +204,21 @@
         height: 40px;
     }
 
+    #ramalNotFaund {
+        width: 300px;
+    }
+
+    #container_iconRamalNotFaund {
+        margin: 30px; 
+    }
+
+    #firstMensageNotFaund {
+        font-size: 17;
+        Letter-spacing: 1.0px;
+    }
+    #segundMensageNotFaund {
+        color: #888783;
+        font-size: 20;
+        Letter-spacing: 1.0px; 
+    }
 }
