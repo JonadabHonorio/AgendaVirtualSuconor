@@ -8,9 +8,7 @@
         diferentes setores da organização.
         
   A aplicação foi desenvolvida com foco em **usabilidade, organização das
-  informações, facilidade de manutenção e segurança no controle de acesso**,
-  servindo também como um projeto prático para aplicação de conceitos de
-  desenvolvimento web e engenharia de software.
+  informações, facilidade de manutenção e segurança no controle de acesso**.
    </p>
 
 
@@ -30,7 +28,7 @@
 
 ## <img alt="Icone-deploy" width="30" src="https://img.icons8.com/?size=100&id=34935&format=png&color=000000"/> Resultado
 
-  <strong><ul><li>Segue o link de projeto em produção: https://agendavirtualsuconor.netlify.app </li></ul></strong>
+  <strong><ul><li>Segue o link do WebSite em Produção: https://agendavirtualsuconor.netlify.app </li></ul></strong>
 
 
 
