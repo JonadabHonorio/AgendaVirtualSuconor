@@ -30,7 +30,7 @@
 
 ## <img alt="Icone-deploy" width="30" src="https://img.icons8.com/?size=100&id=34935&format=png&color=000000"/> Resultado
 
-  <li>Segue o link de projeto em produção: https://agendavirtualsuconor.netlify.app </li>
+  <strong><ul><li>Segue o link de projeto em produção: https://agendavirtualsuconor.netlify.app </li></ul></strong>
 
 
 
