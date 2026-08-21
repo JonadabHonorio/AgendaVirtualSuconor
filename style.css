@@ -263,3 +263,9 @@ h1 {
     margin: 35px;
     color: #4a5565;
 }
+
+input[type="search"]::-webkit-search-cancel-button { /*Remove o "X" nativo do input type="search" no Chrome/Edge/Safari*/
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
